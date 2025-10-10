@@ -1,4 +1,3 @@
-import React from 'react';
 import { DarkModeProvider } from './contexts/DarkModeContext';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
