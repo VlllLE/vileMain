@@ -12,7 +12,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-   ⠀          i have a couple of projects i'm working on, some of which are listed below
+   ⠀          i have a couple of projects i'm working on that are listed below
             </p>
             <p>
               i also like getting money
