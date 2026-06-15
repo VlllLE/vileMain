@@ -16,6 +16,7 @@ const About = () => {
             </p>
             <p>
               i also like getting money
+              please dont make me use LinkedIn
             </p>
             <div className="skills">
               <h3>skills & tech</h3>
