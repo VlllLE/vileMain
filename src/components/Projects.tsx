@@ -3,28 +3,28 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'filler1',
-      description: 'description go here',
+      title: 'Booking System',
+      description: 'full CRUD system with auth',
       image: '',
-      technologies: ['React', 'Node.js', 'MongoDB'],
-      liveUrl: '#',
-      githubUrl: '#',
+      technologies: ['React', 'TS', 'Supabase'],
+      liveUrl: 'https://wad-2-sigma.vercel.app/',
+      githubUrl: 'https://github.com/VlllLE/WAD2',
       featured: true
     },
     {
       id: 2,
-      title: 'filler 2',
-      description: 'i swear i will fill this out at some point',
+      title: 'Therapy Bot',
+      description: 'Mistral7B directed to speak like a therapist',
       image: '',
-      technologies: ['Python', 'HuggingFace', 'Supabase'],
+      technologies: ['Python', 'HuggingFace', 'React/TS'],
       liveUrl: '#',
       githubUrl: '#',
-      featured: true
+      featured: false
     },
     {
       id: 3,
-      title: 'filler 3',
-      description: '...///...///',
+      title: 'CanUMix',
+      description: 'Substance dosage/interaction calculator. For harm reduction. Obviously.',
       image: '',
       technologies: ['Next.js', 'TypeScript', 'Tailwind'],
       liveUrl: '#',
