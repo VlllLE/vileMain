@@ -39,7 +39,7 @@ export default function Hero() {
         <div className="hero-image">
           <div className="profile-placeholder">
             <img 
-              src="/vileMain/public/profile.png"
+              src={`${import.meta.env.BASE_URL}profile.png`}
               alt="vile.png" 
               className="profile-image"
             />
