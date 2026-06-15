@@ -12,11 +12,10 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-   ⠀          i have a couple of projects i'm working on that are listed below
+   ⠀          i have a couple of projects i'm working on that are listed below.
             </p>
             <p>
-              i also like getting money
-              please dont make me use LinkedIn
+              i also like getting money. & please dont make me use LinkedIn.
             </p>
             <div className="skills">
               <h3>skills & tech</h3>

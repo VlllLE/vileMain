@@ -26,7 +26,7 @@ const Projects = () => {
       title: 'CanUMix',
       description: 'Substance dosage/interaction calculator. For harm reduction. Obviously.',
       image: '',
-      technologies: ['Next.js', 'TypeScript'],
+      technologies: ['Next.js', 'TypeScript', 'Drugs.com API'],
       liveUrl: '#',
       githubUrl: '#',
       featured: false

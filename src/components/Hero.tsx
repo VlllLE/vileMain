@@ -21,12 +21,8 @@ export default function Hero() {
             m<span className="highlight">@vile.cx</span>
           </h1>
           <h2 className="hero-subtitle">
-            sometimes i build things then break and fix them
-            over and over and over again
+           i am making websites
           </h2>
-          <p className="hero-description">
-            i have no clue what im doing
-          </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">
               view my work

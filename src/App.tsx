@@ -19,8 +19,8 @@ function App() {
         </main>
         <footer className="footer">
           <div className="container">
-            <p>&copy; 2025 m@vile.cx</p>
-              <p> msg me on discord: 8o40</p>
+            <p>&copy; 2026 m@vile.cx</p>
+              <p> u can also msg me on discord: 8o40</p>
           </div>
         </footer>
       </div>
