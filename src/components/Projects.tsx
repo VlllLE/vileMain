@@ -3,8 +3,8 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Booking System',
-      description: 'full CRUD system with auth',
+      title: 'semi-generic booking system',
+      description: 'full CRUD with auth.',
       image: '',
       technologies: ['React', 'TS', 'Supabase'],
       liveUrl: 'https://wad-2-sigma.vercel.app/',
@@ -13,13 +13,14 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Therapy Bot',
-      description: 'Mistral7B directed to speak like a therapist',
+      title: 'mirror',
+      description: 'Mistral7B directed to speak like a therapist.',
       image: '',
       technologies: ['Python', 'HuggingFace', 'React/TS'],
       liveUrl: '#',
       githubUrl: '#',
-      featured: false
+      featured: false,
+      comingSoon: true,
     },
     {
       id: 3,
@@ -29,7 +30,8 @@ const Projects = () => {
       technologies: ['Next.js', 'TypeScript', 'Drugs.com API'],
       liveUrl: '#',
       githubUrl: '#',
-      featured: false
+      featured: false,
+      comingSoon: true,
     }
   ];
 
@@ -53,9 +55,13 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a href={project.liveUrl} className="project-link primary">
-                    Live Demo
-                  </a>
+                  {project.comingSoon ? (
+                    <span className="project-link primary disabled">Coming Soon</span>
+                  ) : (
+                    <a href={project.liveUrl} className="project-link primary" target="_blank" rel="noopener noreferrer">
+                      Live Demo
+                    </a>
+                  )}
                   <a href={project.githubUrl} className="project-link secondary">
                     GitHub
                   </a>

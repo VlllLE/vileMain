@@ -1,22 +1,20 @@
 
 const About = () => {
   const skills = [
-    'react', 'typescript', 'javascript', 'python', 'html/css', 'node.js','ai stuff',
-    'data stuff','hr compliance','risk analyst','paralegal','PGP','onions','scary stuff','etc.'
+    'react', 'typescript', 'javascript', 'python', 'html/css', 'java', 'scala', 'SQL', 'NoSQL', 'docker', 'kubernetes', 'git',
+    ,'node.js','supabase','machine learning','REST APIs','next.js','flask','ai stuff', 'data stuff','hr compliance','risk analyst','paralegal','PGP'
+    ,'onions','problem sovling','analytical thinking','project planning','research & technical writing','team collaboration','communication'
+    ,'critical thinking','attention to detail','time management','adaptability','etc.'
   ];
 
   return (
     <section id="about" className="section">
       <div className="container">
-        <h2 className="section-title">whats going on?</h2>
+        <h2 className="section-title">what's going on?</h2>
         <div className="about-content">
           <div className="about-text">
-            <p>
-   ⠀          i have a couple of projects i'm working on that are listed below.
-            </p>
-            <p>
-              i also like getting money. & please dont make me use LinkedIn.
-            </p>
+            <p>i have a couple of projects i'm working on that are listed below. </p>
+            <p>& please dont make me use LinkedIn.</p>
             <div className="skills">
               <h3>skills & tech</h3>
               <div className="skills-grid">
@@ -39,7 +37,7 @@ const About = () => {
             </div>
             <div className="stat-item">
               <h3>100%</h3>
-              <p>winging it</p>
+              <p>making websites</p>
             </div>
           </div>
         </div>

@@ -18,10 +18,13 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
-            m<span className="highlight">@vile.cx</span>
+            <span className="highlight">Welcome</span>
           </h1>
           <h2 className="hero-subtitle">
            i am making websites
+          </h2>
+          <h2 className="hero-subtitle">
+           co-founder @ pleiades.org.uk
           </h2>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">
@@ -35,7 +38,7 @@ export default function Hero() {
         <div className="hero-image">
           <div className="profile-placeholder">
             <img 
-              src={`${import.meta.env.BASE_URL}profile.png`}
+              src={`${import.meta.env.BASE_URL}kitty2.png`}
               alt="vile.png" 
               className="profile-image"
             />

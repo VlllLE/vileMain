@@ -42,7 +42,7 @@ const Contact = () => {
     { name: 'github', icon: '🐙', url: 'https://github.com/VlllLE' },
     { name: 'twitch', icon: '📺', url: 'https://twitch.tv/benzos' },
     { name: 'bluesky', icon: '🦋' , url: 'https://bsky.app/profile/51m.bsky.social' },
-    { name: 'soundcloud', icon: '🌐', url: 'https://soundcloud.com/500grams' }
+    { name: 'pleiades', icon: '🌐', url: 'https://pleiades.org.uk' }
   ];
 
   return (
