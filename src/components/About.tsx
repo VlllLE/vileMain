@@ -3,7 +3,7 @@ const About = () => {
   const skills = [
     'react', 'typescript', 'javascript', 'python', 'html/css', 'java', 'scala', 'SQL', 'NoSQL', 'docker', 'kubernetes', 'git',
     ,'node.js','supabase','machine learning','REST APIs','next.js','flask','ai stuff', 'data stuff','hr compliance','risk analyst','paralegal','PGP'
-    ,'onions','problem sovling','analytical thinking','project planning','research & technical writing','team collaboration','communication'
+    ,'onions','problem solving','analytical thinking','project planning','research & technical writing','team collaboration','communication'
     ,'critical thinking','attention to detail','time management','adaptability','etc.'
   ];
 

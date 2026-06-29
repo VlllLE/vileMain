@@ -3,8 +3,8 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'semi-generic booking system',
-      description: 'full CRUD with auth.',
+      title: 'booking system',
+      description: 'full CRUD with auth. Used for a local yoga studio.',
       image: '',
       technologies: ['React', 'TS', 'Supabase'],
       liveUrl: 'https://wad-2-sigma.vercel.app/',
