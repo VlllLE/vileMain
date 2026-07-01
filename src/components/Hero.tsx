@@ -1,20 +1,7 @@
 
 export default function Hero() {
   return (
-    <section
-      style={{
-        position: "relative",
-        minHeight: "80vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        background:
-          "linear-gradient(135deg, #5b76f7 0%, #6a5bdc 40%, #7b52c5 70%, #8a49b1 100%)",
-        borderRadius: "12px",
-        overflow: "hidden",
-      }}
-    >
-
+    <section id="home" className="hero-section">
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-title">

@@ -9,18 +9,18 @@ const Projects = () => {
       technologies: ['React', 'TS', 'Supabase'],
       liveUrl: 'https://wad-2-sigma.vercel.app/',
       githubUrl: 'https://github.com/VlllLE/WAD2',
-      featured: true
+      featured: false
     },
     {
       id: 2,
       title: 'mirror',
       description: 'Mistral7B directed to speak like a therapist.',
       image: '',
-      technologies: ['Python', 'HuggingFace', 'React/TS'],
-      liveUrl: '#',
-      githubUrl: '#',
-      featured: false,
-      comingSoon: true,
+      technologies: ['Python', 'HuggingFace', 'React'],
+      liveUrl: 'https:mirrorq.ai/',
+      githubUrl: 'https://github.com/VlllLE/mirror',
+      featured: true,
+      comingSoon: false,
     },
     {
       id: 3,

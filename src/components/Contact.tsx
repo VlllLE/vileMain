@@ -26,14 +26,12 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: '📧',
-      title: 'email',
-      value: 'm@vile.cx',
+      title: 'm@vile.cx',
       link: 'mailto:m@vile.cx'
     },
     {
       icon: '📍',
-      title: 'location',
-      value: 'glasgow, scotland',
+      title: 'glasgow, scotland',
       link: '#'
     }
   ];
@@ -107,7 +105,6 @@ const Contact = () => {
                   <span className="contact-icon">{info.icon}</span>
                   <div>
                     <h4>{info.title}</h4>
-                    <p>{info.value}</p>
                   </div>
                 </a>
               ))}

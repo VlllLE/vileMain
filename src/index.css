@@ -60,6 +60,7 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
 }
 
 /* Typography */
@@ -84,6 +85,10 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+main {
+  padding-top: 70px;
 }
 
 /* Sections */
@@ -202,6 +207,9 @@ p {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.5rem;
 }
 
 .bar {
@@ -213,6 +221,19 @@ p {
 }
 
 /* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #5b76f7 0%, #6a5bdc 40%, #7b52c5 70%, #8a49b1 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
 .hero {
   padding: 8rem 0 5rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -227,6 +248,8 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .hero-title {
@@ -252,13 +275,24 @@ p {
 
 .hero-buttons {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
 }
 
+.hero-section .btn-secondary {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-section .btn-secondary:hover {
+  background-color: white;
+  color: #6a5bdc;
+}
+
 .profile-placeholder {
-  width: 300px;
-  height: 300px;
+  width: min(300px, 70vw);
+  height: min(300px, 70vw);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
@@ -349,7 +383,7 @@ p {
 /* Projects Section */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 2rem;
 }
 
@@ -565,6 +599,27 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .nav-container {
+    padding: 0 1rem;
+  }
+
+  .nav-logo .logo-text {
+    font-size: 1.2rem;
+  }
+
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -576,6 +631,15 @@ p {
     transition: 0.3s;
     box-shadow: 0 10px 27px var(--shadow);
     padding: 2rem 0;
+    gap: 1.5rem;
+    z-index: 999;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+
+  .nav-link,
+  .dark-mode-toggle {
+    padding: 0.75rem 1rem;
   }
 
   .nav-menu.active {
@@ -586,28 +650,118 @@ p {
     display: flex;
   }
 
+  .hero-section {
+    min-height: auto;
+    padding: 2rem 0.5rem;
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
     text-align: center;
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-image {
+    order: -1;
   }
 
   .about-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stat-item {
+    flex: 1 1 140px;
   }
 
   .contact-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
   }
 
+  .project-links {
+    flex-direction: column;
+  }
+
   .container {
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.5rem; }
+
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .nav-container {
+    height: 60px;
+  }
+
+  main {
+    padding-top: 60px;
+  }
+
+  .nav-menu {
+    top: 60px;
+    max-height: calc(100vh - 60px);
+  }
+
+  .hero-title {
+    font-size: 1.9rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .about-stats {
+    flex-direction: column;
+  }
+
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+  }
+
+  .project-content {
+    padding: 1.25rem;
+  }
+
+  .ascii-art {
+    font-size: 0.65rem;
   }
 }
