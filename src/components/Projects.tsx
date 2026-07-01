@@ -17,7 +17,7 @@ const Projects = () => {
       description: 'Mistral7B directed to speak like a therapist.',
       image: '',
       technologies: ['Python', 'HuggingFace', 'React'],
-      liveUrl: 'https:mirrorq.ai/',
+      liveUrl: 'https://mirrorq.ai/',
       githubUrl: 'https://github.com/VlllLE/mirror',
       featured: true,
       comingSoon: false,
