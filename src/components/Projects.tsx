@@ -29,7 +29,7 @@ const Projects = () => {
       image: '',
       technologies: ['Next.js', 'TypeScript', 'Drugs.com API'],
       liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/VlllLE/canumix',
       featured: false,
       comingSoon: true,
     }
