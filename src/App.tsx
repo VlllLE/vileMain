@@ -1,29 +1,44 @@
-import { DarkModeProvider } from './contexts/DarkModeContext';
+import { lazy, Suspense } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { DarkModeProvider } from './contexts/DarkModeProvider';
+import ErrorBoundary from './components/ErrorBoundary';
 import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import NotFound from './components/NotFound';
+import { useScrollToSection } from './hooks/useScrollToSection';
 import './App.css';
+
+const CaseStudyPage = lazy(() => import('./pages/CaseStudyPage'));
+
+function AppContent() {
+  useScrollToSection();
+
+  return (
+    <div className="App">
+      <Navigation />
+      <main id="main-content">
+        <Suspense fallback={<div className="loading-fallback">Loading…</div>}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/projects/:slug" element={<CaseStudyPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </main>
+      <Footer />
+    </div>
+  );
+}
 
 function App() {
   return (
     <DarkModeProvider>
-      <div className="App">
-        <Navigation />
-        <main>
-          <Hero />
-          <About />
-          <Projects />
-          <Contact />
-        </main>
-        <footer className="footer">
-          <div className="container">
-            <p>&copy; 2026 m@vile.cx</p>
-              <p> u can also msg me on discord: 8o40</p>
-          </div>
-        </footer>
-      </div>
+      <ErrorBoundary>
+        <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}>
+          <AppContent />
+        </BrowserRouter>
+      </ErrorBoundary>
     </DarkModeProvider>
   );
 }

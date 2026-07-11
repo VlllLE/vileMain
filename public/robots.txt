@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://VlllLE.github.io/vileMain/sitemap.xml
