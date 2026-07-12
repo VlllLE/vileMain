@@ -16,7 +16,7 @@ const About = () => {
               Year 3 after completing an HND in Software Development.
             </p>
             <p>
-              I build full-stack applications, AI tools and machine-learning systems — with a
+              I build full-stack applications, AI tools and machine-learning systems - with a
               particular interest in product development, explainable AI and startup work. I
               co-founded{' '}
               <a href={SITE.pleiades} target="_blank" rel="noopener noreferrer">
@@ -62,7 +62,7 @@ const About = () => {
             </div>
             <div className="evidence-card">
               <h3>Current work</h3>
-              <p>Final-year dissertation — HR Decision Support Tool with explainable ML</p>
+              <p>Final-year dissertation - HR Decision Support Tool with explainable ML</p>
             </div>
             <div className="evidence-card">
               <h3>Co-founder</h3>

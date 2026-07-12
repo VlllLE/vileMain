@@ -6,29 +6,29 @@ export interface TimelineEntry {
 
 export const TIMELINE: TimelineEntry[] = [
   {
-    year: '2022',
+    year: '2025',
     title: 'HND Software Development',
     description: 'Completed HND, building foundation in programming and software engineering.',
   },
   {
-    year: '2023',
+    year: '2025',
     title: 'Direct entry to Year 3',
     description: 'Entered BSc Honours Software Development at Glasgow Caledonian University.',
   },
   {
-    year: '2023–24',
+    year: '2022–26',
     title: 'Full-stack project work',
     description: 'Built production projects including booking systems, AI tools and marketplaces.',
   },
   {
-    year: '2024',
+    year: '2025',
     title: 'Co-founded Pleiades',
-    description: 'Co-founded pleiades.org.uk — community and technology initiative.',
+    description: 'Co-founded pleiades.org.uk - community and technology initiative.',
   },
   {
-    year: '2025–26',
+    year: '2026–27',
     title: 'Dissertation project',
-    description: 'Developing the HR Decision Support Tool — explainable ML for attrition prediction.',
+    description: 'Developing the HR Decision Support Tool - explainable ML for attrition prediction.',
   },
   {
     year: '2027',

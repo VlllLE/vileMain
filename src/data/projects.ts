@@ -41,10 +41,10 @@ export interface Project {
 }
 
 const statusLabels: Record<ProjectStatus, string> = {
-  'active-development': 'Active development — final-year dissertation',
+  'active-development': 'Active development - final-year dissertation',
   'in-progress': 'In progress',
   live: 'Live',
-  'frontend-live': 'Frontend live — backend local only',
+  'frontend-live': 'Frontend live - backend local only',
   'coming-soon': 'Coming soon',
   archived: 'Archived',
 };
@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
       'Explainable machine-learning and HR case-management platform for attrition prediction with compliance-by-design.',
     problem:
       'HR teams need data-driven attrition insights without sacrificing transparency, auditability or human oversight.',
-    role: 'Sole developer — full-stack, ML pipeline, system design',
+    role: 'Sole developer - full-stack, ML pipeline, system design',
     stack: [
       'React',
       'TypeScript',
@@ -90,7 +90,7 @@ export const PROJECTS: Project[] = [
     image: '/projects/hr-decision-support.png',
     imageAlt: 'HR Decision Support Tool dashboard preview',
     liveUrl: null,
-    githubUrl: null,
+    githubUrl: 'https://github.com/VlllLE/hrbot',
     featured: true,
     caseStudy: {
       overview:
@@ -115,7 +115,7 @@ export const PROJECTS: Project[] = [
         'Logistic Regression as baseline, Random Forest and XGBoost for comparison',
         'SHAP TreeExplainer for tree-model explanations',
         'Explicit fairness metrics (demographic parity, equalised odds) on held-out test data',
-        'No auto-actions on predictions — insights only, human decides',
+        'No auto-actions on predictions - insights only, human decides',
       ],
       challenges: [
         'Balancing ML accuracy with explainability requirements',
@@ -124,7 +124,7 @@ export const PROJECTS: Project[] = [
         'RBAC that maps to realistic HR organisational structures',
       ],
       limitations: [
-        'Active dissertation project — not all features are complete',
+        'Active dissertation project - not all features are complete',
         'ML models trained on synthetic/limited datasets',
         'No production deployment yet',
         'Fairness metrics are illustrative, not validated on real organisational data',
@@ -140,12 +140,12 @@ export const PROJECTS: Project[] = [
       screenshots: [
         {
           src: '/projects/hr-decision-support.png',
-          alt: 'HR Decision Support dashboard — placeholder',
+          alt: 'HR Decision Support dashboard - placeholder',
           caption: 'Dashboard overview (screenshot pending)',
         },
         {
           src: '/projects/hr-decision-support-ml.png',
-          alt: 'ML explanation view — placeholder',
+          alt: 'ML explanation view - placeholder',
           caption: 'SHAP explanation view (screenshot pending)',
         },
       ],
@@ -156,10 +156,10 @@ export const PROJECTS: Project[] = [
     slug: 'mirror',
     title: 'Mirror',
     summary:
-      'Local introspective AI assistant for structured self-reflection — not a replacement for therapy.',
+      'Local introspective AI assistant for structured self-reflection - not a replacement for therapy.',
     problem:
       'People want a private space to think through problems without cloud data exposure or generic chatbot responses.',
-    role: 'Full-stack developer — frontend, backend, prompt engineering',
+    role: 'Full-stack developer - frontend, backend, prompt engineering',
     stack: ['React', 'Python', 'Flask', 'Mistral-7B', 'HuggingFace'],
     keyFeatures: [
       'Local Mistral-7B inference',
@@ -214,7 +214,7 @@ export const PROJECTS: Project[] = [
         'Frontend/backend split means live demo has limited backend functionality',
       ],
       limitations: [
-        'Backend is not deployed — live site is frontend only',
+        'Backend is not deployed - live site is frontend only',
         'Local model requires capable hardware to run',
         'Not a substitute for professional mental health support',
         'Bias detection is heuristic, not clinically validated',
@@ -228,8 +228,8 @@ export const PROJECTS: Project[] = [
       screenshots: [
         {
           src: '/projects/mirror.png',
-          alt: 'Mirror chat interface — placeholder',
-          caption: 'Chat interface (screenshot pending)',
+          alt: 'Mirror chat interface - placeholder',
+          caption: 'Chat interface',
         },
       ],
     },
@@ -242,7 +242,7 @@ export const PROJECTS: Project[] = [
       'Second-hand clothing marketplace with auth, listings, search and image storage.',
     problem:
       'Buying and selling pre-owned clothing needs a simple, trustworthy platform with good search and visual listings.',
-    role: 'Full-stack — frontend and backend implementation',
+    role: 'Full-stack - frontend and backend implementation',
     stack: ['React', 'TypeScript', 'Next.js', 'Supabase', 'PostgreSQL'],
     keyFeatures: [
       'User authentication',
@@ -262,12 +262,12 @@ export const PROJECTS: Project[] = [
     statusLabel: statusLabels['in-progress'],
     image: '/projects/repacked.png',
     imageAlt: 'Repacked marketplace listing page',
-    liveUrl: null,
-    githubUrl: null,
+    liveUrl: 'https://repacked.vercel.app/',
+    githubUrl: 'https://github.com/Roberttgreat/vile',
     featured: true,
     caseStudy: {
       overview:
-        'Repacked is a second-hand clothing marketplace I built across both frontend and backend. Users can register, list items with photos, search and filter listings, and walk through a mock checkout.',
+        'Repacked is a second-hand clothing marketplace I built across both frontend and backend in collaboration with my good friend /@roberttgreat. Users can register, list items with photos, search and filter listings, and walk through a mock checkout.',
       problem:
         'Existing resale platforms are either too complex for casual sellers or lack good filtering. Repacked targets a straightforward listing-and-browse experience.',
       contribution:
@@ -280,6 +280,7 @@ export const PROJECTS: Project[] = [
         'Image upload and display',
         'Category, size and price filters',
         'Text search across listings',
+        'Real-time messaging between buyers and sellers',
         'Mock checkout flow (no real payments)',
       ],
       technicalDecisions: [
@@ -295,21 +296,17 @@ export const PROJECTS: Project[] = [
       ],
       limitations: [
         'No real payment processing',
-        'Not publicly deployed yet',
-        'GitHub repository not yet public',
         'Search is basic text match, not full-text indexed',
       ],
       futureImprovements: [
         'Stripe integration for real checkout',
-        'Messaging between buyers and sellers',
         'Favourites and watchlists',
-        'Deployment to Vercel with production Supabase instance',
       ],
       screenshots: [
         {
           src: '/projects/repacked.png',
-          alt: 'Repacked marketplace — placeholder',
-          caption: 'Listing browse page (screenshot pending)',
+          alt: 'Repacked marketplace - placeholder',
+          caption: 'Listing browse page',
         },
       ],
     },
@@ -345,7 +342,7 @@ export const PROJECTS: Project[] = [
       limitations: ['Built for a single studio, not multi-tenant'],
       futureImprovements: ['Email booking confirmations', 'Calendar integration'],
       screenshots: [
-        { src: '/projects/booking-system.png', alt: 'Booking system — placeholder', caption: 'Screenshot pending' },
+        { src: '/projects/booking-system.png', alt: 'Booking system - placeholder', caption: 'Landing page' },
       ],
     },
   },
@@ -374,10 +371,10 @@ export const PROJECTS: Project[] = [
       features: ['Dosage calculator', 'Interaction checker'],
       technicalDecisions: ['Next.js for SSR and API routes'],
       challenges: ['Sourcing reliable interaction data', 'Presenting medical info responsibly'],
-      limitations: ['Not medical advice — educational only', 'Not yet deployed'],
+      limitations: ['Not medical advice - educational only', 'Not yet deployed'],
       futureImprovements: ['Deploy public beta', 'User-submitted interaction reports'],
       screenshots: [
-        { src: '/projects/canumix.png', alt: 'CanUMix — placeholder', caption: 'Screenshot pending' },
+        { src: '/projects/canumix.png', alt: 'CanUMix - placeholder', caption: 'Landing page ' },
       ],
     },
   },
