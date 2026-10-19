@@ -11,7 +11,7 @@ export const SITE = {
   pleiades: 'https://pleiades.org.uk',
   cvPath: '/cv/matt-stripe-cv.pdf',
   ogImage: '/og-image.png',
-  themeColor: '#6a5bdc',
+  themeColor: '#0a0a0f',
   graduationYear: 2027,
   university: 'Glasgow Caledonian University',
   degree: 'BSc Honours Software Development',
