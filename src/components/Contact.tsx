@@ -97,10 +97,9 @@ const Contact = () => {
   };
 
   const contactLinks = [
-    { icon: '📧', title: SITE.email, link: `mailto:${SITE.email}` },
-    { icon: '📍', title: SITE.location, link: null },
-    { icon: '🌐', title: 'vile.cx', link: SITE.url },
-    { icon: '🚀', title: 'Pleiades', link: SITE.pleiades },
+    { icon: '', title: SITE.email, link: `mailto:${SITE.email}` },
+    { icon: '', title: 'vile.cx', link: SITE.url },
+    { icon: '', title: 'Pleiades', link: SITE.pleiades },
   ];
 
   return (

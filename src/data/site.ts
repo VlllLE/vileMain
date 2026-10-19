@@ -18,10 +18,10 @@ export const SITE = {
 } as const;
 
 export const SOCIAL_LINKS = [
-  { name: 'GitHub', icon: '🐙', url: SITE.github },
-  { name: 'Pleiades', icon: '🌐', url: SITE.pleiades },
-  { name: 'Bluesky', icon: '🦋', url: 'https://bsky.app/profile/51m.bsky.social' },
-  { name: 'Twitch', icon: '📺', url: 'https://twitch.tv/benzos' },
+  { name: 'GitHub', icon: '', url: SITE.github },
+  { name: 'Pleiades', icon: '', url: SITE.pleiades },
+  { name: 'Bluesky', icon: '', url: 'https://bsky.app/profile/51m.bsky.social' },
+  { name: 'Twitch', icon: '', url: 'https://twitch.tv/benzos' },
 ] as const;
 
 export const NAV_ITEMS = [
